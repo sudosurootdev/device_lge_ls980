@@ -5,8 +5,6 @@ etc/Handset_cal.acdb
 etc/Hdmi_cal.acdb
 etc/Headset_cal.acdb
 etc/Speaker_cal.acdb
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
 etc/firmware/fw_bcmdhd_apsta.bin
 etc/firmware/fw_bcmdhd.bin
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -244,4 +242,6 @@ vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/libxml.so
 vendor/lib/pp_proc_plugin.so
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
 vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd
