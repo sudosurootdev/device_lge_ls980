@@ -27,5 +27,9 @@ PRODUCT_MODEL := LG-LS980
 PRODUCT_MANUFACTURER := lge
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/ls980/device.mk)
