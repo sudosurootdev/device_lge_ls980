@@ -247,8 +247,6 @@ vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/libxml.so
 vendor/lib/pp_proc_plugin.so
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
 vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd
 vendor/firmware/a330_pfp.fw
 vendor/firmware/a330_pm4.fw
