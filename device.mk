@@ -39,7 +39,5 @@ PRODUCT_COPY_FILES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    nfc.default \
-    libnfc \
-    libnfc_jni \
-    Nfc
+    nfc_nci.g2 \
+    NfcNci
