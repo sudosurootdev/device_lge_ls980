@@ -29,6 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.def.preferred.network=10 \
     ril.subscription.types=NV,RUIM \
     ro.cdma.subscribe_on_ruim_ready=true \
+    persist.radio.no_wait_for_card=1 \
     keyguard.no_require_sim=true \
     telephony.sms.pseudo_multipart=1 \
     DEVICE_PROVISIONED=1
