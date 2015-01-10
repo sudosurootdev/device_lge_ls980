@@ -43,5 +43,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    nfc_nci.bcm2079x.default \
-    NfcNci
+    nfc_nci.pn54x.default
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
