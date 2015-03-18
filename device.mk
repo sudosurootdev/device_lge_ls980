@@ -34,10 +34,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.sms.pseudo_multipart=1 \
     DEVICE_PROVISIONED=1
 
-# GPS configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps.conf:system/etc/gps.conf
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
@@ -45,6 +41,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default \
     Nfc
+
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
 # NFC config
 PRODUCT_COPY_FILES += \
