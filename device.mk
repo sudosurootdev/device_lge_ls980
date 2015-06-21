@@ -20,32 +20,17 @@ $(call inherit-product, device/lge/g2-common/g2.mk)
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cdma.home.operator.numeric=310120 \
-    ro.cdma.home.operator.alpha=Sprint \
-    telephony.lteOnCdmaDevice=1 \
-    telephony.lte.cdma.device=1 \
-    ro.telephony.default_network=10 \
-    ro.ril.def.preferred.network=10 \
-    ril.subscription.types=NV,RUIM \
-    ro.cdma.subscribe_on_ruim_ready=true \
-    persist.radio.no_wait_for_card=1 \
-    keyguard.no_require_sim=true \
-    telephony.sms.pseudo_multipart=1 \
-    DEVICE_PROVISIONED=1
-
+# CDMA permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    nfc_nci.pn54x.default \
+    nfc.default \
+    libnfc \
+    libnfc_jni \
     Nfc
 
-# GPS
+# Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
-
-# NFC config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+    $(LOCAL_PATH)/configs/sensor_def_ls980.conf:system/etc/sensor_def_variable.conf
